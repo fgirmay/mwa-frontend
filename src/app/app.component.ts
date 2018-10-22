@@ -8,18 +8,7 @@ import { Staff } from './roles/model/staff.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // storedStaffs: Staff[] = [
-  //   {
-  //     firstName: 'sFirst1',
-  //     lastName: 'sLast1'
-  //   },
-  //   {
-  //     firstName: 'sFirst2',
-  //     lastName: 'sLast2'
-  //   },
-  // ];
-
-  storedStaffs = [
+  storedStaffs: Staff[] = [
     {
       firstName: 'sFirst1',
       lastName: 'sLast1'
@@ -27,9 +16,21 @@ export class AppComponent {
     {
       firstName: 'sFirst2',
       lastName: 'sLast2'
-    }];
+    },
+  ];
 
-  onStaffCreated(staff) {
+  // storedStaffs = [
+  //   {
+  //     firstName: 'sFirst1',
+  //     lastName: 'sLast1'
+  //   },
+  //   {
+  //     firstName: 'sFirst2',
+  //     lastName: 'sLast2'
+  //   }];
+
+  onStaffCreated(staff: Staff) {
+    this.storedStaffs = this.storedStaffs.slice();
     this.storedStaffs.push(staff);
     console.log('AppComponent, first name is : ', staff.firstName);
     console.log('AppComponent, first name is : ', staff.lastName);
