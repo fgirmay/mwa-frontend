@@ -11,6 +11,7 @@ export class StaffComponent {
 
   firstNameValue = '';
   lastNameValue = '';
+  roles = ['Admin', 'Staff', 'Student'];
   @Output() staffCreated = new EventEmitter();
 
   onStaffCreate(form: NgForm) {
@@ -21,7 +22,10 @@ export class StaffComponent {
     // this.staffCreated.emit(staff);
     const staff = {
       firstName: form.value.firstName,
-      lastName: form.value.lastName
+      lastName: form.value.lastName,
+      email: form.value.email,
+      userName: form.value.userName,
+      role: form.value.role
     };
     this.staffCreated.emit(staff);
   }

@@ -8,16 +8,7 @@ import { Staff } from './roles/model/staff.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  storedStaffs: Staff[] = [
-    {
-      firstName: 'sFirst1',
-      lastName: 'sLast1'
-    },
-    {
-      firstName: 'sFirst2',
-      lastName: 'sLast2'
-    },
-  ];
+  storedStaffs: Staff[] = [];
 
   // storedStaffs = [
   //   {

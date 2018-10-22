@@ -16,6 +16,30 @@
         ngModel
         placeholder="Last Name">
     </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="email"
+        ngModel
+        placeholder="E-Mail">
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="userName"
+        ngModel
+        placeholder="User Name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select placeholder="Role" type="text" name="role" ngModel>
+        <mat-option *ngFor="let role of roles" [value]="role">
+          {{role}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
     <button
       mat-raised-button
       color="primary"

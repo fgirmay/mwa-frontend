@@ -12,6 +12,7 @@ import {
 
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
+import { MatSelectModule } from '@angular/material/select';
 
 import { AppComponent } from './app.component';
 import { AdminComponent } from './roles/admin/admin.component';
@@ -40,7 +41,8 @@ import { StaffComponent } from './roles/staff/staff.component';
     MatToolbarModule,
     MatProgressSpinnerModule,
     MatExpansionModule,
-    MatTableModule
+    MatTableModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
