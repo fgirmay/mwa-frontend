@@ -25,7 +25,8 @@ export class StaffComponent {
       lastName: form.value.lastName,
       email: form.value.email,
       userName: form.value.userName,
-      role: form.value.role
+      role: form.value.role,
+      status: 'Active'
     };
     this.staffCreated.emit(staff);
   }

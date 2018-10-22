@@ -13,6 +13,7 @@ import {
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { AppComponent } from './app.component';
 import { AdminComponent } from './roles/admin/admin.component';
@@ -42,7 +43,8 @@ import { StaffComponent } from './roles/staff/staff.component';
     MatProgressSpinnerModule,
     MatExpansionModule,
     MatTableModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,6 +8,6 @@ import { Staff } from '../model/staff.model';
 })
 export class StaffListComponent {
   @Input() staffs: Staff[];
-  displayedColumns: string[] = ['firstName', 'lastName', 'email', 'userName', 'role'];
+  displayedColumns: string[] = ['firstName', 'lastName', 'email', 'userName', 'role', 'status'];
   constructor() {}
 }
