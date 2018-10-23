@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Staff } from '../model/staff.model';
 import { NgForm } from '@angular/forms';
 import { StaffService } from '../service/staff.service';
@@ -6,7 +6,8 @@ import { StaffService } from '../service/staff.service';
 @Component({
   selector: 'app-staff',
   templateUrl: './staff.component.html',
-  styleUrls: ['./staff.component.css']
+  styleUrls: ['./staff.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class StaffComponent {
 

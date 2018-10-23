@@ -1,4 +1,8 @@
 main {
-  margin-top: 1rem;
+  margin: auto;
   width: 80%;
+}
+
+.mat-tab-labels{
+    justify-content: center; /* align items in Main Axis */
 }

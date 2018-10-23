@@ -1,8 +1,17 @@
-<h1>WMA course project</h1>
-<app-header></app-header>
-<main>
-  <!-- <app-admin></app-admin> -->
-  <app-staff></app-staff>
-  <app-staff-list></app-staff-list>
-</main>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <mat-tab-group>
+        <mat-tab label="User management"><a routerLink="/staffs"></a></mat-tab>
+        <mat-tab label="Question management"><a routerLink="/question"></a></mat-tab>
+        <mat-tab label="Grade publishing"><a routerLink="/grade"></a></mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
 

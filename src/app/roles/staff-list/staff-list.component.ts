@@ -1,4 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import {
+  Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { Staff } from '../model/staff.model';
@@ -7,7 +8,8 @@ import { StaffService } from '../service/staff.service';
 @Component({
   selector: 'app-staff-list',
   templateUrl: './staff-list.component.html',
-  styleUrls: ['./staff-list.component.css']
+  styleUrls: ['./staff-list.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class StaffListComponent implements OnInit, OnDestroy {
 

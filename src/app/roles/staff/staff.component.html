@@ -8,6 +8,7 @@
         ngModel
         placeholder="First Name">
     </mat-form-field>
+
     <mat-form-field>
       <input
         matInput
@@ -16,6 +17,7 @@
         ngModel
         placeholder="Last Name">
     </mat-form-field>
+
     <mat-form-field>
       <input
         matInput
@@ -24,6 +26,7 @@
         ngModel
         placeholder="E-Mail">
     </mat-form-field>
+
     <mat-form-field>
       <input
         matInput
@@ -40,9 +43,14 @@
         </mat-option>
       </mat-select>
     </mat-form-field>
+
     <button
       mat-raised-button
       color="primary"
-      type="submit">Create Staff</button>
+      type="submit">Add New Staff</button>
+
   </form>
+</mat-card>
+<mat-card>
+  <app-staff-list></app-staff-list>
 </mat-card>
