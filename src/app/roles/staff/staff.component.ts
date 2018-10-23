@@ -1,6 +1,7 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { Staff } from '../model/staff.model';
 import { NgForm } from '@angular/forms';
+import { StaffService } from '../service/staff.service';
 
 @Component({
   selector: 'app-staff',
@@ -12,15 +13,9 @@ export class StaffComponent {
   firstNameValue = '';
   lastNameValue = '';
   roles = ['Admin', 'Staff', 'Student'];
-  @Output() staffCreated = new EventEmitter();
 
   onStaffCreate(form: NgForm) {
-    // const staff: Staff = {
-    //   firstName: form.value.firstName,
-    //   lastName: form.value.lastName
-    // };
-    // this.staffCreated.emit(staff);
-    const staff = {
+    const staff: Staff = {
       firstName: form.value.firstName,
       lastName: form.value.lastName,
       email: form.value.email,
@@ -28,6 +23,10 @@ export class StaffComponent {
       role: form.value.role,
       status: 'Active'
     };
-    this.staffCreated.emit(staff);
+    this.staffService.createStaff(staff);
+
+    console.log('Adding staff');
   }
+
+  constructor(public staffService: StaffService) {}
 }
