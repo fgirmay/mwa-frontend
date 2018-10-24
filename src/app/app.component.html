@@ -1,17 +1,13 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <mat-tab-group>
-        <mat-tab label="User management"><a routerLink="/staffs"></a></mat-tab>
-        <mat-tab label="Question management"><a routerLink="/question"></a></mat-tab>
-        <mat-tab label="Grade publishing"><a routerLink="/grade"></a></mat-tab>
-      </mat-tab-group>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <router-outlet></router-outlet>
-    </div>
+    <nav mat-tab-nav-bar>
+      <a mat-tab-link routerLink="/staffs">User management</a>
+      <a mat-tab-link routerLink="/question">Question management</a>
+      <a mat-tab-link routerLink="/grade">Grade publishing</a>
+    </nav>
   </div>
 </div>
+<router-outlet></router-outlet>
+
+
 
